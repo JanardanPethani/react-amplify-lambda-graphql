@@ -1,3 +1,5 @@
+## Configure amplify for BE changes
+
 ### Add amplify globally
 
 ```sh
@@ -16,3 +18,10 @@ amplify add api
 ```sh
 amplify push
 ```
+
+## Front-end Setup
+
+### Libs
+- Vite
+- aws-amplify 
+- @aws-amplify/ui-react
