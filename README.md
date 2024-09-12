@@ -1,2 +1,8 @@
-# react-amplify-lambda-graphql
-Demo app with AWS Amplify, GraphQL, Lambda, DynamoDB, Cognito
+### Add amplify globally
+
+```sh
+npm i -g @aws-amplify/cli
+
+# Create and setup user
+amplify configure
+```
