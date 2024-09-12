@@ -14,6 +14,9 @@
     "categories": {
       "auth": {
         "reactamplifylambdagr5a8ce3de": {}
+      },
+      "api": {
+        "reactamplifylambdagr": {}
       }
     }
   }
