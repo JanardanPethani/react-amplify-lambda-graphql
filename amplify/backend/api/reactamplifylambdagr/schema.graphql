@@ -1,9 +1,11 @@
 # This "input" configures a global authorization rule to enable public access to
 # all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
 
-input AMPLIFY {
-  globalAuthRule: AuthRule = { allow: public }
-} # FOR TESTING ONLY!
+# FOR TESTING ONLY! This
+# input AMPLIFY {
+#   globalAuthRule: AuthRule = { allow: public } - allows anyone to create, read, update, and delete) is applied to every data model in the GraphQL schema.
+# }
+
 type Todo
   @model # Creates a DynamoDB table
   # Below, each signed-in user, or also known as "owner", of a Todo can create, read, update, and delete their own Todos.
