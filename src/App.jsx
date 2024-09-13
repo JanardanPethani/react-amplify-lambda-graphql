@@ -9,7 +9,7 @@ import {
 import { generateClient } from "aws-amplify/api";
 import { useState, useEffect } from "react";
 
-import { listTodos } from "./graphql/queries";
+import { helloWorldLambda, listTodos } from "./graphql/queries";
 import { createTodo, deleteTodo, updateTodo } from "./graphql/mutations";
 import {
   onCreateTodo,
@@ -25,6 +25,15 @@ function App() {
   useEffect(() => {
     const fetchTodos = async () => {
       const result = await client.graphql({ query: listTodos });
+
+      // Call lambda function
+      await client.graphql({
+        query: helloWorldLambda,
+        variables: {
+          msg: "Test message!!",
+        },
+      });
+
       setTodos(result.data.listTodos.items);
     };
     fetchTodos();

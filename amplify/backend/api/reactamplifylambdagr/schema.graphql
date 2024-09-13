@@ -14,3 +14,8 @@ type Todo
   content: String
   owners: [String] # Use a String array type to configure multi-owner authorization
 }
+
+type Query {
+  helloWorldLambda(msg: String): String
+    @function(name: "amplifyTestLambda-${env}")
+}

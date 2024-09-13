@@ -17,6 +17,12 @@
       },
       "api": {
         "reactamplifylambdagr": {}
+      },
+      "function": {
+        "amplifyTestLambda": {
+          "deploymentBucketName": "amplify-reactamplifylambdagr-dev-e3ea0-deployment",
+          "s3Key": "amplify-builds/amplifyTestLambda-5378534473635356636d-build.zip"
+        }
       }
     }
   }
